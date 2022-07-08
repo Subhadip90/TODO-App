@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+ margin: 0;
+ padding: 0;
+ font-family: 'Poppins', sans-serif;
+ box-sizing: border-box;
+}
+
+i {
+ color: white;
+ pointer-events: none;
+}
+
+.hide {
+ display: none;
+}
+
+.container {
+ min-height: 100vh;
+ /* border: 2px solid green; */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 2em 20em;
+ background: linear-gradient(135deg, #ec2c2c, #e9993d 70%);
+
+}
+
+h1 {
+ margin-bottom: 1.5rem;
+ font-size: 3.2rem;
+ color: white;
+}
+
+h1 span {
+ border-bottom: 1px solid white;
+}
+
+section {
+ /* border: 2px solid blue;   */
+ width: 100%;
+ display: flex;
+ margin-bottom: 1.5rem;
+}
+
+input {
+ width: 100%;
+ outline: none;
+ border: none;
+ font-size: 14px;
+ color: rgba(0, 0, 0, 0.7);
+ padding: 10px;
+ background-color: #e7e6e6;
+}
+
+input::placeholder {
+ font-size: 14px;
+}
+
+.padding {
+ padding: 10px;
+ font-size: 16px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#btn1 {
+ border: 0;
+ background-color: #e9993d;
+}
+
+#btn1:hover,
+#btn2:hover,
+.item #editBtn:hover,
+.item #delBtn:hover,
+.item #tickBtn:hover {
+ background-color: white;
+}
+
+#btn1:hover i {
+ color: #e9993d;
+}
+
+#btn2 {
+ border: 0;
+ background-color: #ec2c2c;
+}
+
+#btn2:hover i {
+ color: #ec2c2c;
+}
+
+#btn1,
+#btn2 {
+ cursor: pointer;
+}
+
+.item {
+ margin: 10px 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ outline: none;
+ border: none;
+ font-size: 14px;
+ color: rgba(0, 0, 0, 0.7);
+ background-color: #e7e6e6;
+}
+
+.item div {
+ display: flex;
+}
+
+.item p,
+.item button {
+ display: flex;
+ border: none;
+}
+
+.item p {
+ width: 100%;
+ font-size: 14px;
+ padding: 0 10px;
+}
+
+.item button {
+ cursor: pointer;
+ padding: 10px;
+ font-size: 16px;
+}
+
+.item #editBtn {
+ background-color: #5b9cd8;
+}
+
+.item #delBtn {
+ background-color: #ec2c2c;
+}
+
+.item #tickBtn {
+ background-color: #29d229;
+}
+
+.item #editBtn:hover i {
+ color: #5b9cd8;
+}
+
+.item #delBtn:hover i {
+ color: #ec2c2c;
+}
+
+.item #tickBtn:hover i {
+ color: #29d229;
+}
+
+/* .grey{
+  background-color: #eae7e7;
+} */
+
+@media only screen and (max-width : 1200px) {
+ .container {
+  padding: 1em 10em;
+ }
+}
+
+@media only screen and (max-width : 700px) {
+ .container {
+  padding: 1em 2em;
+ }
+
+ h1 {
+  font-size: 2rem;
+ }
+}
